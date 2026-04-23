@@ -6,7 +6,7 @@ from utils.robot import get_webots_robot
 from mapping.kinematics import DiffDriveOdometry, calculate_diff_drive_velocities
 from mapping.grid import OccupancyGrid
 
-lin_vel = 0.4  # m/s
+lin_vel = 0.5  # m/s
 ang_vel = 2.0  # rad/s
 
 def get_compass_sensor(robot):
