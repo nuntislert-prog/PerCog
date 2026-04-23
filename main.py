@@ -49,7 +49,7 @@ def run_sim() -> None:
 
     # Odometry and grid
     odometry = DiffDriveOdometry(LEncoder, REncoder)
-    grid = OccupancyGrid(world_min=(-10.0, -10.0), world_max=(5.0, 5.0), resolution=0.02)
+    grid = OccupancyGrid(world_min=(-2.0, -4.0), world_max=(6.0, 4.0), resolution=0.02)
 
     while robot.step(timestep) != -1:
         velocties = [0, 0]
