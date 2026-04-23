@@ -48,7 +48,7 @@ def run_sim() -> None:
     keyboard = WebotsKeyboard(robot)
 
     # Odometry and grid
-    odometry = DiffDriveOdometry(LEncoder, REncoder, compass)
+    odometry = DiffDriveOdometry(LEncoder, REncoder)
     grid = OccupancyGrid(world_min=(-10.0, -10.0), world_max=(5.0, 5.0), resolution=0.02)
 
     while robot.step(timestep) != -1:
